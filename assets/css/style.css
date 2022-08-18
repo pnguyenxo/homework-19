@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    float: left;
+    margin: 10px;
+}
+.logo img {
+    width: 45px;
+    height: 80px;
+}
+nav{
+    padding-top: 20px;
+    display: flex;
+    float: right;
+    margin-bottom: 30px;
+}
+button{
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0);
+    padding: 10px 30px;
+    border-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #AD6DAA;
+}
+.button:hover{
+  background-color: #AD6DAA;
+  border: 1px solid #FFFFFF;
+  color: #AD6DAA;
+}
+.button:active {
+  background-color: #662563;
+  box-shadow: 0 5px #666;
+  transform: translateY (4px);
+  color: #662563;
+  opacity: 100;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+header{
+    width: 100%;
+}
+.flex-container {
+  display: flex;
+  background-color: None;
+}
+
+.flex-container div {
+  background-color: None;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+nav ul {list-style: none; padding: 0 ;
+}
+nav ul li {display: inline; padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.clear-floats { clear: both; }
+h1 {
+    font-size: 5em;
+    color: #FFFFFF;
+  }
+h2 {
+    font-size: 3em;
+    color: #662563;
+  }
+  h3 {
+    font-size: 2em;
+    color: #662563;
+  }
+  h4{
+    font-size: 1em;
+    color: #662563;
+    font-weight: bold;
+  }
+  h5{
+    font-size: 1em;
+    color: #000000;
+    font-weight: lighter;
+  }
+  .home-1 {
+    height: 200px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .home-1-heading {
+    background-color: #AD6DAA;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+  }
+  .project1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center
+
+  }
+  .image div{
+    display: inline-block;
+    width: 49%;
+    padding: 5px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.margin-left{
+  margin-left: 40px;
+}
+  .contact-1{
+    height: 500px;
+    background-color: #662563;
+    display: flex;
+    padding-left: 100px;
+  }
+  .contact-1-heading{
+    font-family: sans-serif;
+    align-items: left;
+    justify-content: left;
+    display: inline-block;
+  }
+  .contact-image{
+    background-image: url("");
+    display: inline-block;
+  }
+  footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(102, 37, 99);
+    font-family: sans-serif;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  footer ul{
+    width: 80%;
+    background-color: #AD6DAA;
+    display: flex;
+    justify-content: space-around;
+  }
+  .project1{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .project2{
+    background-image: url("../Images/OCH\ Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .smallimg{
+    width: 40px;
+    height: 40px;
+  }
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "project 1"
+    "healing arc"
+    ;
+  }
+  @media only screen and (max-width: 500px) {
+   nav {
+    display: hidden;
+   }
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    body {
+      background-color: #FFFFFF;
+    }
+    .project1 {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px
+      300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "project 1"
+      "healing arc"
+    }
+    }
